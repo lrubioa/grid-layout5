@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 5</title>
+
+    <style>
+        #mainC {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 40% 60%;
+
+            width: 40%;
+            height: 500px;
+            border: 2px black solid;
+
+            gap: 10px;
+            padding: 20px;
+
+            background-color: aliceblue;
+        }
+
+        label{
+            width: 100%;
+        }
+
+        input{
+            width: 95%;
+        }
+
+        #comment{
+            height: 200px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainC">
+
+
+        <div id="container">
+            <!-- <form id="tForm"> -->
+
+                <div id="labels">
+                    <label for="mail">Email</label><br><br>
+                    <label for="fName">First Name</label><br><br>
+                    <label for="lName">Last Name</label><br><br>
+                    <label for="money">Deposit ($)</label><br><br>
+                    <label for="comment">Comment</label><br><br>
+                </div>
+
+                <div id="inputs">
+                    <input placeholder="Email" id="mail"><br><br>
+                    <input placeholder="First Name" id="fName"><br><br>
+                    <input placeholder="Last Name" id="lName"><br><br>
+                    <input placeholder="Deposit in USD" id="money"><br><br>
+                    <input placeholder="Add Comment" id="comment"><br><br>
+                </div>
+                
+            <!-- </form> -->
+        </div>
+
+
+    </div>
+</body>
+
+</html>
